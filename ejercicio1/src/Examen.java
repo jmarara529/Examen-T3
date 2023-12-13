@@ -8,6 +8,8 @@ public class Examen {
         this.titulo = titulo;
     }
 
+
+
     public String getTitulo() {
         return titulo;
     }
@@ -34,12 +36,13 @@ public class Examen {
 
     @Override
     public String toString() {
-        return asignatura + titulo + '-' + nota ;
+        return asignatura +'-'+ titulo + '-' + nota ;
     }
 
 
-    public void redondear(){
+    public double redondear(){
         this.nota = Math.round(nota);
+        return nota;
     }
 
     public boolean estaAprobado(){

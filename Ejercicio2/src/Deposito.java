@@ -30,13 +30,10 @@ public class Deposito {
 
     @Override
     public String toString() {
-        return "Deposito{" +
-                "capacidad=" + capacidad +
-                ", contenido=" + contenido +
-                '}';
+        return "Deposito de " + contenido + "("+ capacidad +")";
     }
 
-    private boolean estaVacio(){
+    public boolean estaVacio(){
         if (this.capacidad<=0){
             return true;
         }else {
